@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Basic Examples
 
-###use push
+### use push
 
 ```swift
 ///MARK: push   
