@@ -97,7 +97,6 @@ open class PageManager: NSObject, UINavigationControllerDelegate {
         finished finishedCallBack: @escaping CompleteClosure = PageManager.defaultComplete
         ) {
         let nav = self.getNearNav()
-        nav?.delegate = self
         if nav != nil {
             if (nav?.viewControllers.count)! < 2 {
                 print("无页面返回")
@@ -117,17 +116,19 @@ open class PageManager: NSObject, UINavigationControllerDelegate {
                 finishedCallBack(destinationVC!)
                 nav?.popToViewController(destinationVC!, animated: animation!)
             } else {
-                destinationVC = self.currentTopViewController()
+                let currentIndex = nav?.viewControllers.index(of: self.currentTopViewController())
+                destinationVC = nav?.viewControllers[currentIndex! - 1]
                 finishedCallBack(destinationVC!)
                 nav?.popViewController(animated: animation!)
             }
         } else {
-            let destinationVC = self.currentTopViewController()
-            finishedCallBack(destinationVC)
-            if let _ = destinationVC.presentingViewController {
-                destinationVC.dismiss(animated: animation!, completion: nil)
+            let currentIndex = nav?.viewControllers.index(of: self.currentTopViewController())
+            let destinationVC = nav?.viewControllers[currentIndex! - 1]
+            finishedCallBack(destinationVC!)
+            if let _ = destinationVC!.presentingViewController {
+                destinationVC!.dismiss(animated: animation!, completion: nil)
             } else {
-                destinationVC.navigationController?.popViewController(animated: animation!)
+                destinationVC!.navigationController?.popViewController(animated: animation!)
             }
         }
         
