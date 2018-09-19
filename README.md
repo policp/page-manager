@@ -14,8 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```swift
 ///MARK: USAGE
 weak var weakSelf = self
-PageManager.share.push("MainViewController", pushAnimator: self.getPushAnimator(indexPath.row)) { (target) in
-            target.setValue(weakSelf.dataSource[indexPath.row], forKey: "name")
+PageManager.share.push("MainViewController", pushAnimator: .fade) { (target) in
+            target.setValue("Joy", forKey: "name")
         }
 
 ```
