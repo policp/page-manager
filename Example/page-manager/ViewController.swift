@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.rowHeight = 50
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reusecell")
         // Do any additional setup after loading the view, typically from a nib. reusecell
+        PageManager.share.pop("pageName", true) { (target) in
+            //
+        }
     }
 
     override func didReceiveMemoryWarning() {

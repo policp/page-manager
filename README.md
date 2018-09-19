@@ -11,14 +11,27 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Basic Examples
 
+###use push
+
 ```swift
-///MARK: USAGE
+///MARK: push   
 weak var weakSelf = self
 PageManager.share.push("MainViewController", pushAnimator: .fade) { (target) in
             target.setValue("Joy", forKey: "name")
         }
 
 ```
+
+### use pop
+
+```swift
+///MARK: pop
+PageManager.share.pop("pageName", true) { (target) in
+            //
+        }
+```
+
+
 
 ## Screenshots
 
