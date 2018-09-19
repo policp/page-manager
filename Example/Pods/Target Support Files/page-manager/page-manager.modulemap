@@ -1,0 +1,6 @@
+framework module page_manager {
+  umbrella header "page-manager-umbrella.h"
+
+  export *
+  module * { export * }
+}

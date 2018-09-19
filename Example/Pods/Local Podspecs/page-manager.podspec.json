@@ -1,0 +1,22 @@
+{
+  "name": "page-manager",
+  "version": "0.1.0",
+  "summary": "A short description of page-manager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/policp/page-manager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "policp": "chenpeng@yingyinglicai.com"
+  },
+  "source": {
+    "git": "https://github.com/policp/page-manager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "page-manager/Classes/**/*"
+}
