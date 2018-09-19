@@ -15,7 +15,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```swift
 ///MARK: push   
-weak var weakSelf = self
 PageManager.share.push("MainViewController", pushAnimator: .fade) { (target) in
             target.setValue("Joy", forKey: "name")
         }
@@ -27,7 +26,7 @@ PageManager.share.push("MainViewController", pushAnimator: .fade) { (target) in
 ```swift
 ///MARK: pop
 PageManager.share.pop("pageName", true) { (target) in
-            //
+            target.setValue(true, forKey: "reloadData")
         }
 ```
 
