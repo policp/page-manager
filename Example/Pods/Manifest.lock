@@ -1,5 +1,5 @@
 PODS:
-  - page-manager (1.0.0)
+  - page-manager (1.0.3)
 
 DEPENDENCIES:
   - page-manager (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  page-manager: b56fbfcab609cc486a95ce0eb7ff550a624c93e0
+  page-manager: 39f243ef9e056697453e75901b8eac86413fcd75
 
-PODFILE CHECKSUM: 21407d4e24fce164d1dc97294070a136380c8b7f
+PODFILE CHECKSUM: 0a0e2db913dc533df2553641cc6915403d5c0043
 
 COCOAPODS: 1.5.3

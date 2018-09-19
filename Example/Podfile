@@ -1,11 +1,6 @@
 use_frameworks!
 
-target 'page-manager_Example' do
+target 'example' do
   pod 'page-manager', :path => '../'
 
-  target 'page-manager_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
