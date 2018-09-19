@@ -122,13 +122,13 @@ open class PageManager: NSObject, UINavigationControllerDelegate {
                 nav?.popViewController(animated: animation!)
             }
         } else {
-            let currentIndex = nav?.viewControllers.index(of: self.currentTopViewController())
-            let destinationVC = nav?.viewControllers[currentIndex! - 1]
-            finishedCallBack(destinationVC!)
-            if let _ = destinationVC!.presentingViewController {
-                destinationVC!.dismiss(animated: animation!, completion: nil)
+            let destinationVC = self.currentTopViewController()
+            if let _ = destinationVC.presentingViewController {
+                destinationVC.dismiss(animated: animation!, completion: nil)
             } else {
-                destinationVC!.navigationController?.popViewController(animated: animation!)
+                if let nav = destinationVC.navigationController {
+                    nav.popViewController(animated: animation!)
+                }
             }
         }
         
