@@ -41,8 +41,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        weak var weakSelf = self
         PageManager.share.push("MainViewController", pushAnimator: self.getPushAnimator(indexPath.row)) { (target) in
-            target.setValue(self.dataSource[indexPath.row], forKey: "name")
+            target.setValue(weakSelf?.dataSource[indexPath.row], forKey: "name")
         }
     }
     

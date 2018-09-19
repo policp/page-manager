@@ -19,6 +19,10 @@ class MainViewController: UIViewController {
         view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }
+    
+    deinit {
+        print("aaaaaaaaaaaa")
+    }
 
 
 }

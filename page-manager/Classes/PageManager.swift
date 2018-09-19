@@ -66,12 +66,12 @@ open class PageManager: NSObject, UINavigationControllerDelegate {
         completeCallBack(destinationVC!)
         destinationVC?.hidesBottomBarWhenPushed = true
         let nav = getNearNav()
-        if animatorType == .system, nav?.delegate != nil {
+        if animatorType == .system {
             nav?.delegate = nil
         } else {
             nav?.delegate = self
-            pushAnimator = animatorType
         }
+        pushAnimator = animatorType
         nav?.pushViewController(destinationVC!, animated: animation!)
     }
     
