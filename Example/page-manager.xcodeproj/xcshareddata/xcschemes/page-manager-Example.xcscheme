@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "page-manager_Example.app"
-               BlueprintName = "page-manager_Example"
+               BuildableName = "example.app"
+               BlueprintName = "example"
                ReferencedContainer = "container:page-manager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,7 +40,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -58,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "page-manager_Example.app"
-            BlueprintName = "page-manager_Example"
+            BuildableName = "example.app"
+            BlueprintName = "example"
             ReferencedContainer = "container:page-manager.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,7 +69,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -82,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "page-manager_Example.app"
-            BlueprintName = "page-manager_Example"
+            BuildableName = "example.app"
+            BlueprintName = "example"
             ReferencedContainer = "container:page-manager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -101,8 +99,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "page-manager_Example.app"
-            BlueprintName = "page-manager_Example"
+            BuildableName = "example.app"
+            BlueprintName = "example"
             ReferencedContainer = "container:page-manager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

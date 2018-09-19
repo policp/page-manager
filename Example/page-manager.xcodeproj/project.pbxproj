@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C1220134C1BFFBFBB56F167F /* Pods_page_manager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0830C5F38BC3BC09888C8F5 /* Pods_page_manager_Example.framework */; };
+		FF3B7CF721524781001293AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B7CF621524781001293AD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 		177FA92CC09C9C690E25D658 /* Pods-page-manager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-page-manager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-page-manager_Tests/Pods-page-manager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C39A43EC6814C5C837418B6 /* page-manager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "page-manager.podspec"; path = "../page-manager.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B6BEBFD5275D32DB44F5B33 /* Pods_page_manager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_page_manager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD01AFB9204008FA782 /* page-manager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "page-manager_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		D78E69478EBBE79978197216 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D8B08E211B64364017DFAB8A /* Pods-page-manager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-page-manager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-page-manager_Example/Pods-page-manager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F650E1BD9DBA46247D8C8DDA /* Pods-page-manager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-page-manager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-page-manager_Example/Pods-page-manager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FF3B7CF621524781001293AD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* page-manager_Example.app */,
+				607FACD01AFB9204008FA782 /* example.app */,
 				607FACE51AFB9204008FA782 /* page-manager_Tests.xctest */,
 			);
 			name = Products;
@@ -115,6 +117,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FF3B7CF621524781001293AD /* MainViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -162,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* page-manager_Example */ = {
+		607FACCF1AFB9204008FA782 /* example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "page-manager_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "example" */;
 			buildPhases = (
 				3443F58B3ACDB554434827EC /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = "page-manager_Example";
+			name = example;
 			productName = "page-manager";
-			productReference = 607FACD01AFB9204008FA782 /* page-manager_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* page-manager_Tests */ = {
@@ -234,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* page-manager_Example */,
+				607FACCF1AFB9204008FA782 /* example */,
 				607FACE41AFB9204008FA782 /* page-manager_Tests */,
 			);
 		};
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3B7CF721524781001293AD /* MainViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -340,7 +344,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* page-manager_Example */;
+			target = 607FACCF1AFB9204008FA782 /* example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -546,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "page-manager_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

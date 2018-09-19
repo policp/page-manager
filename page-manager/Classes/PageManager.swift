@@ -14,7 +14,7 @@ import UIKit
 /// - fade: fade in and fade out
 /// - scale: zoom
 /// - circleScale: circle zoom
-enum PushAnimator {
+public enum PushAnimator {
     case system
     case present
     case fade
@@ -27,9 +27,9 @@ public protocol PageProtocol {
     func pageTopViewController() -> UIViewController
 }
 
-class PageManager: NSObject, UINavigationControllerDelegate {
+open class PageManager: NSObject, UINavigationControllerDelegate {
     
-    static let share = PageManager()
+    public static let share = PageManager()
     
     /// You can pass the parameters to the page through this closure.
     public typealias CompleteClosure = (_ controller: UIViewController) -> Void
@@ -155,7 +155,7 @@ class PageManager: NSObject, UINavigationControllerDelegate {
     }
     
     private func getClass(with pageName: String!) -> UIViewController.Type? {
-        let appName = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+        let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String
         let cls = NSClassFromString(appName+"."+pageName) as? UIViewController.Type
         return cls
     }
@@ -183,7 +183,7 @@ class PageManager: NSObject, UINavigationControllerDelegate {
         return destinationVC
     }
     
-    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let navAnimator = NavAnimator.init(operation: operation, pushType: pushAnimator!)
         return navAnimator
     }

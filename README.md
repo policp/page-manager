@@ -9,7 +9,19 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Basic Examples
+
+```swift
+///MARK: USAGE
+PageManager.share.push("MainViewController", pushAnimator: self.getPushAnimator(indexPath.row)) { (target) in
+            target.setValue(self.dataSource[indexPath.row], forKey: "name")
+        }
+
+```
+
+## Screenshots
+
+
 
 ## Installation
 
