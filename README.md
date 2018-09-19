@@ -21,7 +21,7 @@ PageManager.share.push("MainViewController", pushAnimator: self.getPushAnimator(
 
 ## Screenshots
 
-
+![avatar](https://github.com/policp/page-manager/blob/master/example.gif)
 
 ## Installation
 
