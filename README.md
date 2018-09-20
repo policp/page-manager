@@ -30,6 +30,22 @@ PageManager.share.pop("pageName", true) { (target) in
         }
 ```
 
+## Warning
+
+When you assign a value to the target view (target), use the setValue:forKey: method, and put the **@objc** keyword in front of the target parameter.
+
+```swift
+class MainViewController: UIViewController {
+
+    @objc var name: String?
+  
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = name
+    }
+}
+```
+
 
 
 ## Screenshots
@@ -47,7 +63,9 @@ pod 'page-manager'
 
 ## Author
 
-policp, chenpeng@yingyinglicai.com
+policp
+
+My mail box, chenpengpoli@gmail.com
 
 ## License
 
