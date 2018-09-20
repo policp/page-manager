@@ -50,7 +50,7 @@ class MainViewController: UIViewController {
 
 ## Screenshots
 
-![avatar](https://github.com/policp/page-manager/blob/master/example.gif)
+![avatar](https://github.com/policp/page-manager/blob/master/new_example.gif)
 
 ## Installation
 
