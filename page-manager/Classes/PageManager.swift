@@ -184,7 +184,7 @@ open class PageManager: NSObject, UINavigationControllerDelegate {
         return destinationVC
     }
     
-    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let navAnimator = NavAnimator.init(operation: operation, pushType: pushAnimator!)
         return navAnimator
     }
@@ -211,12 +211,12 @@ extension UIViewController {
 class NavAnimator: NSObject, UIViewControllerAnimatedTransitioning, CAAnimationDelegate {
     
     var duration = 0.5
-    var operation: UINavigationControllerOperation = .push
+    var operation: UINavigationController.Operation = .push
     var animatorType: PushAnimator = .present
     
     private var navTransitionContext: UIViewControllerContextTransitioning?
     
-    init(operation operationType: UINavigationControllerOperation, pushType pushAniamtor: PushAnimator) {
+    init(operation operationType: UINavigationController.Operation, pushType pushAniamtor: PushAnimator) {
         operation = operationType
         animatorType = pushAniamtor
     }
